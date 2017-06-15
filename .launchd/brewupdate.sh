@@ -4,9 +4,9 @@
 #
 
 if [ ! -e /usr/local/bin/brew ]; then 
-		echo -e "[ERROR] [$(date)]: Brew installation not found.";
+		printf "[ERROR] [$(date)]: Brew installation not found.\n";
 	else
-		echo -e "Executing homebrew update @ $(date)";
+		printf "Executing homebrew update @ $(date)\n";
 			/usr/local/bin/brew update
-		echo -e "Complete.\n";
+		printf "Complete.\n\n";
 fi
